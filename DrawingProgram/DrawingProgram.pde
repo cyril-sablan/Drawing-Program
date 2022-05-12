@@ -21,13 +21,13 @@ void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
-  if (mouseX>=drawingSurfaceX && mouseX<=drawingSurfaceX+drawingSurfaceWidth && mouseY>=drawingSurfaceY && mouseY<=drawingSurfaceY+drawingSurfaceHeight) {}//Button Paper (Drawing Surface)
-  
-  if (draw == false) {
-    draw = true;
-  } else {
-    draw = false;
-  }//End draw Boolean 
+  if (mouseX>=drawingSurfaceX && mouseX<=drawingSurfaceX+drawingSurfaceWidth && mouseY>=drawingSurfaceY && mouseY<=drawingSurfaceY+drawingSurfaceHeight ) {
+  }//Button Paper (Drawing Surface)
+   if (draw == false) {
+     draw = true;
+   } else {
+     draw = false;
+   }//End draw Boolean 
 }//End mousePressed
 //
 //End MAIN
