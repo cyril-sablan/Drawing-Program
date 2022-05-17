@@ -1,6 +1,6 @@
 //Global Variables
 Boolean draw=false; 
-float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight;
+float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight, drawingDiameter;
 //
 void setup() {
   //
@@ -11,10 +11,14 @@ void setup() {
   drawingSurfaceY = displayHeight*0/5;
   drawingSurfaceWidth = displayWidth*3/4;
   drawingSurfaceHeight = displayHeight*4/5; 
+  drawingDiameter = displayWidth*1/100; 
+  //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
 }//End setup
 void draw() {
-  if ( draw==true ) line( mouseX, mouseY, pmouseX, pmouseY ) ;//End Line Draw
+  //Drawing Tools
+   if ( draw==true && mouseX>=drawingSurfaceX && mouseX<=drawingSurfaceX+drawingSurfaceWidth && mouseY>=drawingSurfaceY && mouseY<=drawingSurfaceY+drawingSurfaceHeight ) line( mouseX, mouseY, pmouseX, pmouseY ) ;//End Line Draw
+  if ( draw==true  && mouseX>=drawingSurfaceX && mouseX<=drawingSurfaceX+drawingSurfaceWidth && mouseY>=drawingSurfaceY && mouseY<=drawingSurfaceY+drawingSurfaceHeight ) ellipse ( mouseX, mouseY, drawingDiameter, drawingDiameter ); //Circle Drawing tool
 }//End draw
 //
 void keyPressed() {
