@@ -3,6 +3,7 @@ Boolean draw=false;
 float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight, drawingDiameter;
 //
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
+float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
 int reset=1; 
 color white=255, resetColor= white, red=#FF0303, black=0, quitButtonColor;
 String quitButtonString = "QUIT";
@@ -20,6 +21,11 @@ void setup() {
   quitButtonY = displayHeight*0;
   quitButtonWidth = displayWidth*2/20; // 2/20 = 1/10
   quitButtonHeight = displayHeight*1/20;
+  //
+  secondTextX = quitButtonX;
+  secondTextY = displayHeight*1/20;
+  secondTextWidth = ;
+  secondTextHeight = ;
   //
   font = createFont ("SimSun", initialFontSize);
   //
@@ -50,6 +56,9 @@ void draw() {
   textFont(font, size);
   text(quitButtonString, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   //
+  //second rectangle with more text
+  fill(white);
+  rect(secondTextX, secondTextY, secondTextWidth, secondTextHeight);
 }//End draw
 //
 void keyPressed() {
