@@ -7,6 +7,7 @@ float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
 int reset=1; 
 color white=255, resetColor= white, red=#FF0303, black=0, quitButtonColor;
 String quitButtonString = "QUIT";
+String secondTextString = "Whaoo!";
 //
 PFont font;
 int initialFontSize=55;
@@ -24,8 +25,8 @@ void setup() {
   //
   secondTextX = quitButtonX;
   secondTextY = displayHeight*1/20;
-  secondTextWidth = ;
-  secondTextHeight = ;
+  secondTextWidth = displayWidth*2/20;
+  secondTextHeight = displayHeight*1/20;
   //
   font = createFont ("SimSun", initialFontSize);
   //
@@ -59,6 +60,12 @@ void draw() {
   //second rectangle with more text
   fill(white);
   rect(secondTextX, secondTextY, secondTextWidth, secondTextHeight);
+  fill(black); //ink 
+  textAlign (CENTER, CENTER);
+  //Values : {LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  size = 20; //Change until fits
+  textFont(font, size);
+  text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
 }//End draw
 //
 void keyPressed() {
