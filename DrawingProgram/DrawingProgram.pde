@@ -1,36 +1,17 @@
 //Global Variables
 Boolean draw=false; 
-float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight, drawingDiameter;
 //
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
 int reset=1; 
 color white=255, resetColor= white, red=#FF0303, black=0, quitButtonColor;
-String quitButtonString = "QUIT";
-String secondTextString = "Whaoo!";
-//
-PFont font;
-int initialFontSize=55;
-int size; 
 //
 void setup() {
-  //
   fullScreen(); //size, displayWidth, displayHeight 
-  //
   population(); 
-  quitButtonX = displayWidth*18/20; // 18/20 = 9/10
-  quitButtonY = displayHeight*0;
-  quitButtonWidth = displayWidth*2/20; // 2/20 = 1/10
-  quitButtonHeight = displayHeight*1/20;
+  textSetup();
+  pieceOfPaper();
   //
-  secondTextX = quitButtonX;
-  secondTextY = displayHeight*1/20;
-  secondTextWidth = displayWidth*2/20;
-  secondTextHeight = displayHeight*1/20;
-  //
-  font = createFont ("SimSun", initialFontSize);
-  //
-  rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
 }//End setup
 void draw() {
   //Drawing Tools
