@@ -41,11 +41,6 @@ void setup () {
 
   //rect(mw, displayHeight*0, displayWidth*2/10, displayHeight);
 
-
-
-
-
-
   stroke(reset);
 }
 
@@ -54,7 +49,7 @@ void draw () {
 
   //==16unctions===
   quitButDraw();
-  stButDraw();
+  bButDraw();
   coButDraw();
   tbButDraw();
   backButDraw();
@@ -68,17 +63,6 @@ void draw () {
   fill(white);
 
 
-
-  //draw
-  /* if (draw == true && mouseX>dsx && mouseX<dsx+dsw && mouseY>dsy && mouseY<dsy+dsh) {
-   stroke(drawColor);
-   strokeWeight(drawStroke);
-   line(mouseX, mouseY, pmouseX, pmouseY);
-   stroke(black);
-   stroke(reset);
-   //ellipse(mouseX, mouseY, dd, dd);
-   } 
-   */
 }
 
 void mousePressed () {
