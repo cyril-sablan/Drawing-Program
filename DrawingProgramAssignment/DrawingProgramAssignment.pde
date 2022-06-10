@@ -1,4 +1,4 @@
-blanimport ddf.minim.*;
+import ddf.minim.*;
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
 import ddf.minim.signals.*;
@@ -67,7 +67,7 @@ void draw () {
 
 void mousePressed () {
   quitButMP();
-  sbMP();
+  bbMP();
   tbMP();
   cbMP();
   bbMP();

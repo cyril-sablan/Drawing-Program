@@ -41,10 +41,10 @@ float mbw, mbh; //menubutton w h
 float sideMenuW, sideMenuH;
 color menuColor;
 
-//stroke button
+//brush button
 float sbx, sby; 
 color sbColor;
-String sbtxt = "Stroke";
+String sbtxt = "Brush";
 float sbmx, sbmy;
 float strSelW, strSelH;
 float thinX, thinY;
@@ -53,8 +53,8 @@ float thickX, thickY;
 String thintxt = "Thin";
 String medtxt = "Medium";
 String thicktxt = "Thick";
-Boolean strokeButtonON = false;
-Boolean strokeButtonRESET = false;
+Boolean brushButtonON = false;
+Boolean brushButtonRESET = false;
 
 //color button
 float cbx, cby;
@@ -151,22 +151,22 @@ void population () {
   sideMenuH = eraserH = displayHeight*1/8;
 
 
-  //strokeButton
-  sbx = displayWidth*1/64;
-  sby = displayHeight*1/32;
+  //brushButton
+  bbx = displayWidth*1/64;
+  bby = displayHeight*1/32;
 
-  sbmx = mw;
-  sbmy = displayHeight*0;
+  bbmx = mw;
+  bbmy = displayHeight*0;
 
-  strSelH = sideMenuH;
-  strSelW = sideMenuW*1/3;
+  bruSelH = sideMenuH;
+  bruhSelW = sideMenuW*1/3;
 
-  thinX = sbmx;
+  thinX = bbmx;
   thinY = medY = thickY = cbmy;
 
-  medX = sbmx + sideMenuW*1/3;
+  medX = bbmx + sideMenuW*1/3;
 
-  thickX = sbmx + sideMenuW*2/3;
+  thickX = bbmx + sideMenuW*2/3;
 
 
   //colorbutton
