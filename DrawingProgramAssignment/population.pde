@@ -12,7 +12,7 @@ String tptxt = "Templates";
 color red=#DB4B4B, white=#FFFFFF, black=#000000, blue=#7CCBF5, orange=#FF742E, gray=#CBCBCB, yellow=#FFDD2E, Lgreen=#42C90E, Dgreen=#11901F, Dblue=#0B7089, Lpurple=#A630E3, 
   Dpurple=#771EA7, pink=#FC3671, grey=#868686, Lgrey=#E8E8E8;
 
-//strokes
+//brush
 float reset;
 float drawStroke;
 
@@ -46,7 +46,7 @@ float sbx, sby;
 color sbColor;
 String sbtxt = "Brush";
 float sbmx, sbmy;
-float strSelW, strSelH;
+float bruSelW, bruSelH;
 float thinX, thinY;
 float medX, medY;
 float thickX, thickY; 
@@ -124,7 +124,7 @@ float loopCount;
 
 void population () {
 
-  //strokes
+  //stroke
   reset = 1;
 
   drawStroke = 1;
@@ -159,7 +159,7 @@ void population () {
   bbmy = displayHeight*0;
 
   bruSelH = sideMenuH;
-  bruhSelW = sideMenuW*1/3;
+  bruSelW = sideMenuW*1/3;
 
   thinX = bbmx;
   thinY = medY = thickY = cbmy;
@@ -260,8 +260,8 @@ void population () {
   flower = loadImage("media/flowers.png");
   dragon = loadImage("media/dragon.png");
 
-  exW = strSelW;
-  exH = strSelH;
+  exW = bruSelW;
+  exH = bruSelH;
 
   exY = tpmy;
   exMandelaX = tpmx;

@@ -19,26 +19,26 @@ void bButDraw () {
   
   textCode(sbtxt, 10, sbx, sby, mbw, mbh);
   
-  if (strokeButtonON == true) {
+  if (brushButtonON == true) {
   noStroke();
   fill(white);
     rect(sbmx, sbmy, sideMenuW , sideMenuH);
     
-    rect(thinX, thinY, strSelW, strSelH);
-    textCode(thintxt, 16, thinX, thinY, strSelW, strSelH); 
+    rect(thinX, thinY, bruSelW, bruSelH);
+    textCode(thintxt, 16, thinX, thinY, bruSelW, bruSelH); 
 
     fill(Lgrey);
-    rect(medX, medY, strSelW, strSelH);
-    textCode(medtxt, 16, medX, medY, strSelW, strSelH);
+    rect(medX, medY, bruSelW, bruSelH);
+    textCode(medtxt, 16, medX, medY, bruSelW, bruSelH);
 
     fill(white);
-    rect(thickX, thickY, strSelW, strSelH);
-    textCode(thicktxt, 16, thickX, thickY, strSelW, strSelH);
+    rect(thickX, thickY, bruSelW, bruSelH);
+    textCode(thicktxt, 16, thickX, thickY, bruSelW, bruSelH);
     
     
  stroke(reset); }
  
- if (strokeButtonRESET == true) {
+ if (brushButtonRESET == true) {
    noStroke();
    menuColor = gray;
    fill(menuColor);
@@ -54,31 +54,31 @@ void sbMP () {
   thickMP();
   
   if (mouseX>sbx && mouseX<sbx+mbw && mouseY>sby && mouseY<sby+mbh) {
-    if (strokeButtonON == false) {
-      strokeButtonON = true;
-      strokeButtonRESET = false;
+    if (brushButtonON == false) {
+      brushButtonON = true;
+      brushButtonRESET = false;
     } else {
-      strokeButtonON = false;
-      strokeButtonRESET = true;
+      brushButtonON = false;
+      brushButtonRESET = true;
     }
 }
 
 }
 
  void thinMP() {
-   if(strokeButtonON == true && mouseX>thinX && mouseX<thinX+strSelW && mouseY>thinY && mouseY<thinY+strSelH)
+   if(brushButtonON == true && mouseX>thinX && mouseX<thinX+bruSelW && mouseY>thinY && mouseY<thinY+bruSelH)
    drawStroke = 1;
    
  }
  
   void medMP() {
-   if(strokeButtonON == true && mouseX>medX && mouseX<medX+strSelW && mouseY>medY && mouseY<medY+strSelH)
+   if(brushButtonON == true && mouseX>medX && mouseX<medX+bruSelW && mouseY>medY && mouseY<medY+bruSelH)
    drawStroke = 5;
    
  }
  
    void thickMP() {
-   if(strokeButtonON == true && mouseX>thickX && mouseX<thickX+strSelW && mouseY>thickY && mouseY<thickY+strSelH)
+   if(brushButtonON == true && mouseX>thickX && mouseX<thickX+bruSelW && mouseY>thickY && mouseY<thickY+bruSelH)
    drawStroke = 9;
    
  }
