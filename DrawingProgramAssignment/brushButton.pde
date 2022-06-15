@@ -1,28 +1,28 @@
-void bButDraw () {
-  if(mouseX>=sbx && mouseX<=sbx+mbw && mouseY>=sby && mouseY<=sby+mbh) {
+void brButDraw () {
+  if(mouseX>=brbx && mouseX<=brbx+mbw && mouseY>=brby && mouseY<=brby+mbh) {
     noStroke();
-    sbColor = blue;
-    fill (sbColor);
-    rect(sbx, sby, mbw, mbh);
+    brbColor = blue;
+    fill (brbColor);
+    rect(brbx, brby, mbw, mbh);
     fill (white);
     stroke(reset);
    
     
   } else {
     noStroke();
-    sbColor = gray;
-    fill (sbColor);
-    rect(sbx, sby, mbw, mbh);
+    brbColor = gray;
+    fill (brbColor);
+    rect(brbx, brby, mbw, mbh);
     fill (white);
     stroke(reset);
   }
   
-  textCode(sbtxt, 10, sbx, sby, mbw, mbh);
+  textCode(brbtxt, 10, brbx, brby, mbw, mbh);
   
   if (brushButtonON == true) {
   noStroke();
   fill(white);
-    rect(sbmx, sbmy, sideMenuW , sideMenuH);
+    rect(brbmx, brbmy, sideMenuW , sideMenuH);
     
     rect(thinX, thinY, bruSelW, bruSelH);
     textCode(thintxt, 16, thinX, thinY, bruSelW, bruSelH); 
@@ -42,18 +42,18 @@ void bButDraw () {
    noStroke();
    menuColor = gray;
    fill(menuColor);
-       rect(sbmx, sbmy, sideMenuW , sideMenuH);
+       rect(brbmx, brbmy, sideMenuW , sideMenuH);
       fill(white);
       stroke(reset);
  }
  
 } 
-void sbMP () {
+void brbMP () {
   thinMP();
   medMP();
   thickMP();
   
-  if (mouseX>sbx && mouseX<sbx+mbw && mouseY>sby && mouseY<sby+mbh) {
+  if (mouseX>brbx && mouseX<brbx+mbw && mouseY>brby && mouseY<brby+mbh) {
     if (brushButtonON == false) {
       brushButtonON = true;
       brushButtonRESET = false;

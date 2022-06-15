@@ -1,7 +1,7 @@
 //templates
 color tpColor;
-PImage flower, mandela, dragon;
-float exY, exMandelaX, exFlowerX, exDragonX;
+PImage fish, dog, skull;
+float exY, exSkullX, exDogX, exFishX;
 float exW, exH;
 float tpbx, tpby, tpmx, tpmy;
 Boolean templButtonON = false;
@@ -42,10 +42,10 @@ float sideMenuW, sideMenuH;
 color menuColor;
 
 //brush button
-float sbx, sby; 
-color sbColor;
-String sbtxt = "Brush";
-float sbmx, sbmy;
+float brbx, brby; 
+color brbColor;
+String brbtxt = "Brush";
+float brbmx, brbmy;
 float bruSelW, bruSelH;
 float thinX, thinY;
 float medX, medY;
@@ -152,11 +152,11 @@ void population () {
 
 
   //brushButton
-  bbx = displayWidth*1/64;
-  bby = displayHeight*1/32;
+  brbx = displayWidth*1/64;
+  brby = displayHeight*1/32;
 
-  bbmx = mw;
-  bbmy = displayHeight*0;
+  brbmx = mw;
+  brbmy = displayHeight*0;
 
   bruSelH = sideMenuH;
   bruSelW = sideMenuW*1/3;
@@ -172,7 +172,7 @@ void population () {
   //colorbutton
   drawColor = black;
 
-  cbx = sbx;
+  cbx = brbx;
   cby = displayHeight*5/32;
 
   cbmx = mw;
@@ -201,7 +201,7 @@ void population () {
 
 
   //toolbutton
-  tbx = sbx;
+  tbx = brbx;
   tby = displayHeight*9/32;
 
   tbmx = tlineX = mw;
@@ -256,21 +256,21 @@ void population () {
 
 
   //templates 
-  mandela = loadImage("media/mandela.png");
-  flower = loadImage("media/flowers.png");
-  dragon = loadImage("media/dragon.png");
+  skull  = loadImage("Template/skull.jpg");
+  dog = loadImage("Template/dog.jpg");
+  fish = loadImage("Template/fish.jpg");
 
   exW = bruSelW;
   exH = bruSelH;
 
   exY = tpmy;
-  exMandelaX = tpmx;
-  exFlowerX = tpmx + exW;
-  exDragonX = tpmx + exW + exW;
+  exSkullX = tpmx;
+  exDogX = tpmx + exW;
+  exFishX = tpmx + exW + exW;
 
   //musicPlayerButton
   
-  mpx = sbx;
+  mpx = brbx;
   mpy = displayHeight*21/32;
 
   mpw = mbw;
@@ -281,14 +281,14 @@ void population () {
   mpmw = sideMenuW;
   mpmh = sideMenuH*3;
 
-  play = loadImage("media/play.png");
-  pause = loadImage("media/pause.png");
+  play = loadImage("Image/play.png");
+  pause = loadImage("Image/pause.png");
 
-  next = loadImage("media/fastForward.png");
-  previous = loadImage("media/fastBack.png");
+  next = loadImage("Image/fastforward.jpg");
+  previous = loadImage("Image/rewind.png");
 
-  loop = loadImage("media/loo.png");
-  power = loadImage("media/power.png");
+  loop = loadImage("Image/loop.png");
+  power = loadImage("Image/power.png");
 
   pauseplayX = mpmx + mpmx*6.6/8;
   pauseplayY = mpmy + mpmy*1/4;

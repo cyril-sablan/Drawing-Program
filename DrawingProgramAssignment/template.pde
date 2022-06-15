@@ -27,16 +27,16 @@ void tpButDraw () {
       
   
 
-      rect(exMandelaX, exY, exW, exH); 
-      image(mandela, exMandelaX, exY, exW, exH);
+      rect(exSkullX, exY, exW, exH); 
+      image(skull, exSkullX, exY, exW, exH);
 
       fill(Lgrey);
-      rect(exFlowerX, exY, exW, exH); 
-      image(flower, exFlowerX, exY, exW, exH);
+      rect(exDogX, exY, exW, exH); 
+      image(dog, exDogX, exY, exW, exH);
       fill(white);
 
-      rect(exDragonX, exY, exW, exH);
-      image(dragon, exDragonX, exY, exW, exH);
+      rect(exFishX, exY, exW, exH);
+      image(fish, exFishX, exY, exW, exH);
 
       
       
@@ -56,7 +56,7 @@ void tpButDraw () {
  
 void tpMP () {
   mandelaMP();
-  flowerMP();
+  DogMP();
   dragonMP();
 
   if (mouseX>tpbx && mouseX<tpbx+mbw && mouseY>tpby && mouseY<tpby+mbh) {
@@ -72,19 +72,19 @@ void tpMP () {
 }
 
 void mandelaMP () {
-  if (templButtonON == true && mouseX>exMandelaX && mouseX<exMandelaX+exW && mouseY>exY && mouseY<exY+exH) {
-   image(mandela, dsx, dsy, dsw, dsh);
+  if (templButtonON == true && mouseX>exSkullX && mouseX<exSkullX+exW && mouseY>exY && mouseY<exY+exH) {
+   image(skull, dsx, dsy, dsw, dsh);
   }
 }
   
-void flowerMP () {
-  if (templButtonON == true && mouseX>exFlowerX && mouseX<exFlowerX+exW && mouseY>exY && mouseY<exY+exH) {
-   image(flower, dsx, dsy, dsw, dsh);
+void DogMP () {
+  if (templButtonON == true && mouseX>exDogX && mouseX<exDogX+exW && mouseY>exY && mouseY<exY+exH) {
+   image(dog, dsx, dsy, dsw, dsh);
   }
 }
   
 void dragonMP () {
- if (templButtonON == true && mouseX>exDragonX && mouseX<exDragonX+exW && mouseY>exY && mouseY<exY+exH) {
-  image(dragon, dsx, dsy, dsw, dsh);
+ if (templButtonON == true && mouseX>exFishX && mouseX<exFishX+exW && mouseY>exY && mouseY<exY+exH) {
+  image(fish, dsx, dsy, dsw, dsh);
   }
 }

@@ -16,9 +16,9 @@ int currentSong = numberOfSongs - numberOfSongs; //Current Song is 0
 void setup () {
   println("start of console :)");
   minim = new Minim(this);
-  song[currentSong] = minim.loadFile("media/569791__migfus20__lo-fi-music-guitar-loop.mp3");
-  song[currentSong + 1] = minim.loadFile("media/544416__shortrecord__background-music.mp3");
-  song[currentSong + 2] = minim.loadFile("media/325647__shadydave__expressions-of-the-mind-piano-loop.mp3");
+  song[currentSong] = minim.loadFile("MusicDownload/The_Simplest.mp3");
+  song[currentSong + 1] = minim.loadFile("MusicDownload/Newsroom.mp3");
+  song[currentSong + 2] = minim.loadFile("MusicDownload/Music Program_FreeWare Music_MusicDownload_groove.mp3");
   //song1.play(); //put number in ms to start or leave empty
 
 
@@ -49,7 +49,7 @@ void draw () {
 
   //==16unctions===
   quitButDraw();
-  bButDraw();
+  brButDraw();
   coButDraw();
   tbButDraw();
   backButDraw();
@@ -70,7 +70,7 @@ void mousePressed () {
   bbMP();
   tbMP();
   cbMP();
-  bbMP();
+  brbMP();
   tpMP();
   mpMP();
 
