@@ -18,7 +18,7 @@ color backgroundColour, canvasColour, salmon, darkBlue, blue, lightGray;
 color gray, red, blue2, purple, pink, orange, green, teal, lime, yellow;
 PFont buttonFont;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, canvasColourDropdownX, canvasColourDropdownY, canvasColourDropdownWidth, canvasColourDropdownHeight;
-float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserButtonX, drawingToolsX, backgroundColourX;
+float topRowY, topRowWidth, topRowHeight, restartX, templateX, template2X, eraserButtonX, drawingToolsX, backgroundColourX;
 float canvasColourDropdownX2, canvasColourDropdownX3, canvasColourDropdownX4, canvasColourDropdownX5, canvasColourDropdownY2, canvasColourDropdownY3;
 float leftRowX, leftRowWidth, leftRowHeight, leftRowChoicesWidth, leftRowChoicesHeight, eraserSizesY, shapesY, brushSizesY, inkColoursY, colourChoicesWidth, colourChoicesHeight;
 float musicControlsY, musicControlsHeight, musicButtonWidth, playlistX, loopX, playPauseX, restartMusicX, song1X, song2X, song3X, songWidth;
@@ -26,7 +26,7 @@ float penThickness, eraserThickness, angle;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2, imageWidth3, imageHeight3;
 float song1name, song2name, song3name;
 PImage pic, pic2, playlistIcon, playlistIcon2, loopIcon, loopIcon2, pauseIcon, pauseIcon2, playIcon, playIcon2, rewindIcon, rewindIcon2;
-Boolean draw=false, drawOn=false, sprayPaint=false, sprayPaintOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false, circleOn=false, circle=false, squareOn=false, square=false, triangleOn=false, triangle=false; 
+Boolean draw=false, drawOn=false, sprayPaint=false, sprayPaintOn=false, template1= false,template2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false, circleOn=false, circle=false, squareOn=false, square=false, triangleOn=false, triangle=false; 
 Boolean canvasBlack=false, canvasWhite=false, canvasGray=false, canvasRed=false, canvasBlue=false, canvasPurple=false, canvasPink=false, canvasOrange=false, canvasGreen=false, canvasTeal=false, canvasLime=false, canvasYellow=false; //Canvas Background Colour 
 Boolean song1On=false, song2On=false, song3On=false, playlistOn=false, loopOn=false;
 
@@ -51,7 +51,7 @@ void draw() {
   //Top Row Buttons
   quitButton();
   restartCanvas();
-  lineArt();
+  template();
   eraserButton();
   drawingTools();
   backgroundColour();

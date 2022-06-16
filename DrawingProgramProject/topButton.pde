@@ -1,4 +1,4 @@
-String restart= "Restart Canvas", eraserText= "Eraser", drawingToolsText= "Drawing Tools", lineArt1Text= "Line Art 1", lineArt2Text= "Line Art 2", canvasColourText= "Canvas Colour";
+String restart= "Restart Canvas", eraserText= "Eraser", drawingToolsText= "Drawing Tools", template1Text= "Template 1", template2Text= "Template 2", canvasColourText= "Canvas Colour";
 
 
 //Restart Canvas
@@ -20,39 +20,39 @@ void restartCanvas() {
 } //End of Restart Canvas
 
 
-//Line Art
-void lineArt() { 
-  if (mouseX>lineArtX && mouseX<lineArtX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) { //Line Art 1 = totoro
+//Template
+void template() { 
+  if (mouseX>templateX && mouseX<templateX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) { 
     fill(darkBlue);
-    rect(lineArtX, topRowY, topRowWidth, topRowHeight);
+    rect(templateX, topRowY, topRowWidth, topRowHeight);
     reset();
-    lineArt1Text();
+    template1Text();
   } else {
     border();
     fill(blue);
-    rect(lineArtX, topRowY, topRowWidth, topRowHeight);
+    rect(templateX, topRowY, topRowWidth, topRowHeight);
     reset();
     fill(darkBlue);
-    lineArt1Text();
+    template1Text();
     reset();
   }
-  if (mouseX>lineArt2X && mouseX<lineArt2X+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) { //Line Art 2 = pooh
+  if (mouseX>template2X && mouseX<template2X+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) { 
     fill(darkBlue);
-    rect(lineArt2X, topRowY, topRowWidth, topRowHeight);
+    rect(template2X, topRowY, topRowWidth, topRowHeight);
     reset();
-    lineArt2Text();
+    template2Text();
   } else {
     border();
     fill(blue);
-    rect(lineArt2X, topRowY, topRowWidth, topRowHeight);
+    rect(template2X, topRowY, topRowWidth, topRowHeight);
     reset();
     fill(darkBlue);
-    lineArt2Text();
+    template2Text();
     reset();
   }
-  if (lineArt1 == true && lineArt2 == false) image(pic, imageX, imageY, imageWidth, imageHeight);
-  if (lineArt1 == false && lineArt2 == true) image(pic2, imageX2, imageY2, imageWidth2, imageHeight2);
-} //End of Line Art
+  if (template1 == true && template2 == false) image(pic, imageX, imageY, imageWidth, imageHeight);
+  if (template1 == false && template2 == true) image(pic2, imageX2, imageY2, imageWidth2, imageHeight2);
+} //End of Template
 
 
 //Eraser

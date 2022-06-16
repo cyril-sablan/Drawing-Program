@@ -16,15 +16,15 @@ void restartButtonText() {
   text(restart, restartX, topRowY, topRowWidth, topRowHeight);
 }
 
-void lineArt1Text() {
+void template1Text() {
   textAlign (CENTER, CENTER);
   textFont(buttonFont, 20);
-  text(lineArt1Text, lineArtX, topRowY, topRowWidth, topRowHeight);
+  text(template1Text, templateX, topRowY, topRowWidth, topRowHeight);
 }
-void lineArt2Text() {
+void template2Text() {
   textAlign (CENTER, CENTER);
   textFont(buttonFont, 20);
-  text(lineArt2Text, lineArt2X, topRowY, topRowWidth, topRowHeight);
+ text(template2Text, template2X, topRowY, topRowWidth, topRowHeight);
 }
 
 void eraserButtonText() {

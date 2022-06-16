@@ -1,16 +1,16 @@
 void topRowMousePressed() {
-  if (mouseX>lineArtX && mouseX<lineArtX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+  if (mouseX>templateX && mouseX<templateX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     click.play();
     click.rewind();
-    lineArt1 = true;
-    lineArt2 = false;
+    template1 = true;
+    template2 = false;
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
   }
-  if (mouseX>lineArt2X && mouseX<lineArt2X+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+  if (mouseX>template2X && mouseX<template2X+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     click.play();
     click.rewind();
-    lineArt1 = false;
-    lineArt2 = true;
+    template1 = false;
+    template2 = true;
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
   }
   if (mouseX>eraserButtonX && mouseX<eraserButtonX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
@@ -165,8 +165,8 @@ void mainControlsPressed() {
     sprayPaintOn = false;
     eraserOn = false;
     eraser = false;
-    lineArt1 = false;
-    lineArt2 = false;
+    template1 = false;
+    template2 = false;
     circleOn = false;
     circle = false;
     squareOn = false;

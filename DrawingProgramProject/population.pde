@@ -41,21 +41,21 @@ void variablePopulation() {
   quitButtonHeight = height*1/20;
 
 
-  //Line Art
-  pic = loadImage ("Template/dog.jpg"); //Dimensions: 660 Width, 962 Height
+  //Template
+  pic = loadImage ("Template/dog.jpg"); 
   float imageWidthRatio = 660.0/660.0; 
   float imageHeightRatio = 962.0/660.0;
   imageX = canvasX+ width*1/5;
-  imageY = canvasY;
-  imageWidth = (canvasHeight*imageWidthRatio)*14/20;
-  imageHeight = (canvasHeight*imageHeightRatio)*14/20;
-  pic2 = loadImage ("Template/skull.jpg"); //Dimensions: 801 Width, 1024 Height
+  imageY = canvasY + height*1/50;
+  imageWidth = (canvasHeight*imageWidthRatio)*15/25;
+  imageHeight = (canvasHeight*imageHeightRatio)*15/25;
+  pic2 = loadImage ("Template/skull.jpg"); 
   float imageWidthRatio2 = 801.0/801.0; 
   float imageHeightRatio2 = 1024.0/801.0;
   imageX2 = canvasX+ width*1/5;
   imageY2 = canvasY+ height*1/50;
-  imageWidth2 = (canvasHeight*imageWidthRatio2)*15/20;
-  imageHeight2 = (canvasHeight*imageHeightRatio2)*15/20; 
+  imageWidth2 = (canvasHeight*imageWidthRatio2)*15/25;
+  imageHeight2 = (canvasHeight*imageHeightRatio2)*15/25; 
 
 
   //Top Row Buttons
@@ -63,8 +63,8 @@ void variablePopulation() {
   topRowWidth = width*7/60;
   topRowHeight = height*2/30;
   restartX = width*47/60;
-  lineArt2X = width*38/60;
-  lineArtX = width*29/60;
+  template2X = width*38/60;
+  templateX = width*29/60;
   eraserButtonX = width*20/60;
   drawingToolsX = width*11/60;
   backgroundColourX = width*2/60;
